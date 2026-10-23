@@ -7,10 +7,10 @@ This repository contains the lab record PDF and separate MySQL 8 scripts for Exp
 | File | Description |
 |---|---|
 | [`exp-3to6 dbms.pdf`](exp-3to6%20dbms.pdf) | Original lab record for Experiments 3–6, including aims, code, and output pages |
-| [`sql/exp3.sql`](sql/exp3.sql) | Creates and seeds departments, employees, projects, and work assignments; demonstrates basic queries |
-| [`sql/exp4.sql`](sql/exp4.sql) | Adds manager relationships; demonstrates joins, subqueries, simulated set operations, and `EXPLAIN` |
-| [`sql/exp5.sql`](sql/exp5.sql) | Creates views, demonstrates view updatability, and runs recursive reporting-chain queries |
-| [`sql/exp6.sql`](sql/exp6.sql) | Adds salary validation and audit triggers plus the `transfer_employee` procedure |
+| [`sql/exp3.sql`](exp3.sql) | Creates and seeds departments, employees, projects, and work assignments; demonstrates basic queries |
+| [`sql/exp4.sql`](exp4.sql) | Adds manager relationships; demonstrates joins, subqueries, simulated set operations, and `EXPLAIN` |
+| [`sql/exp5.sql`](exp5.sql) | Creates views, demonstrates view updatability, and runs recursive reporting-chain queries |
+| [`sql/exp6.sql`](exp6.sql) | Adds salary validation and audit triggers plus the `transfer_employee` procedure |
 
 ## Experiment overview
 
