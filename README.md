@@ -4,14 +4,13 @@ This repository contains the practical records and SQL scripts for the RDBMS Lab
 
 Files
 
-File| Description
-"experiment 1 dbms.pdf"| Experiment 1: ER diagram for an Indian e-commerce platform
-"experiment 2 dbms.pdf"| Experiment 2: Relational schema using MySQL constraints and referential integrity
-"exp-3to6-dbms.pdf"| Practical record for Experiments 3–6, including aims, code, and output pages
-"exp3.sql"| Employee–Department–Project schema and aggregate queries
-"exp4.sql"| Joins, correlated subqueries, EXISTS, and EXPLAIN
-"exp5.sql"| SQL views and recursive CTEs
-"exp6.sql"| Stored procedure, salary validation triggers, and audit logging
+- Experiment 1: "experiment 1 dbms.pdf" — ER diagram for an Indian e-commerce platform.
+- Experiment 2: "experiment 2 dbms.pdf" — Relational schema using MySQL constraints and referential integrity.
+- Experiments 3–6: "exp-3to6-dbms.pdf" — Practical record including aims, code, and output pages.
+- Experiment 3 SQL: "exp3.sql" — Employee–Department–Project schema and aggregate queries.
+- Experiment 4 SQL: "exp4.sql" — Joins, correlated subqueries, EXISTS, and EXPLAIN.
+- Experiment 5 SQL: "exp5.sql" — SQL views and recursive CTEs.
+- Experiment 6 SQL: "exp6.sql" — Stored procedure, salary validation triggers, and audit logging.
 
 Experiment Overview
 
@@ -46,6 +45,8 @@ How to Run
 3. Run "exp4.sql", "exp5.sql", and "exp6.sql" in sequence.
 4. Refer to the practical PDFs for the corresponding aims, diagrams, queries, and outputs.
 
-Note
+Notes
 
-Experiments 1 and 2 are available as practical record PDFs. SQL scripts for Experiments 3–6 are included in this repository.
+- Experiments 1 and 2 are available as practical record PDFs.
+- SQL scripts for Experiments 3–6 are included in the repository.
+- Run the SQL scripts in order because later experiments build on earlier ones.
