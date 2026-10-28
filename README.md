@@ -1,52 +1,77 @@
-RDBMS Lab: Experiments 1–6
+# DBMS Lab Practicals
 
-This repository contains the practical records and SQL scripts for the RDBMS Lab (25CSH-210).
+This repository contains my Database Management Systems (DBMS) lab practicals, including practical records in PDF format and SQL scripts for implementation and practice.
 
-Files
+## Experiments
 
-- Experiment 1: "experiment 1 dbms.pdf" — ER diagram for an Indian e-commerce platform.
-- Experiment 2: "experiment 2 dbms.pdf" — Relational schema using MySQL constraints and referential integrity.
-- Experiments 3–6: "exp-3to6-dbms.pdf" — Practical record including aims, code, and output pages.
-- Experiment 3 SQL: "exp3.sql" — Employee–Department–Project schema and aggregate queries.
-- Experiment 4 SQL: "exp4.sql" — Joins, correlated subqueries, EXISTS, and EXPLAIN.
-- Experiment 5 SQL: "exp5.sql" — SQL views and recursive CTEs.
-- Experiment 6 SQL: "exp6.sql" — Stored procedure, salary validation triggers, and audit logging.
+### Experiment 1: ER Diagram for an E-Commerce Platform
+- **Objective:** Design an Entity-Relationship (ER) diagram for an Indian e-commerce platform.
+- **File:** `experiment 1 dbms.pdf`
 
-Experiment Overview
+### Experiment 2: ER Model to Relational Schema
+- **Objective:** Convert an ER diagram into a relational schema using MySQL constraints and demonstrate referential integrity violations.
+- **File:** `experiment 2 dbms.pdf`
 
-Experiment 1 — ER Diagram
+### Experiment 3: DBMS Practical
+- Practical record and SQL implementation.
+- **Files:** `exp-3to6-dbms.pdf`, `exp3.sql`
 
-Design an ER diagram for an Indian e-commerce platform.
+### Experiment 4: DBMS Practical
+- Practical record and SQL implementation.
+- **Files:** `exp-3to6-dbms.pdf`, `exp4.sql`
 
-Experiment 2 — Relational Schema
+### Experiment 5: DBMS Practical
+- Practical record and SQL implementation.
+- **Files:** `exp-3to6-dbms.pdf`, `exp5.sql`
 
-Convert the ER diagram into a relational schema using MySQL constraints and demonstrate referential integrity violations.
+### Experiment 6: DBMS Practical
+- Practical record and SQL implementation.
+- **Files:** `exp-3to6-dbms.pdf`, `exp6.sql`
 
-Experiment 3 — Employee, Department, and Project
+### Experiment 7: Database Normalization
+- Normalize a denormalized Sales table from UNF to 3NF and BCNF.
+- Identify functional dependencies and verify lossless join and dependency preservation.
+- **File:** `dbms experiment 7.pdf`
+- **SQL Script:** `exp7.sql`
 
-Create the database schema and write SQL queries using aggregates, GROUP BY, and HAVING.
+### Experiment 8: Transactions and Concurrency Control
+- Implement banking-style transactions using `COMMIT`, `ROLLBACK`, and `SAVEPOINT`.
+- Demonstrate transaction isolation levels and concurrency anomalies using multiple sessions.
+- **File:** `dbms experiment 8.pdf`
+- **SQL Script:** `exp8.sql`
 
-Experiment 4 — Joins, Subqueries, and Query Plans
+### Experiment 9: Indexing and Query Performance
+- Create a Railway Booking table containing at least 5,000 records.
+- Compare query execution plans before and after creating single-column and composite indexes using `EXPLAIN`.
+- **File:** `dbms experimment 9.pdf`
+- **SQL Script:** `exp9.sql`
 
-Write queries using joins, correlated subqueries, and EXISTS, and compare execution plans using EXPLAIN.
+### Experiment 10: Query Optimization
+- Generate a dataset containing at least 10,000 rows.
+- Analyze five potentially slow queries using `EXPLAIN`.
+- Optimize queries using indexing and query rewriting, and compare execution performance.
+- **File:** `dbms experiment 10 .pdf`
+- **SQL Script:** `exp10.sql`
 
-Experiment 5 — Views and Recursive CTEs
+## Technologies Used
 
-Create SQL views, test their updatability, and implement a recursive CTE for reporting chains.
+- MySQL
+- SQL
+- Database design and normalization
+- Transactions and concurrency control
+- Indexing and query optimization
 
-Experiment 6 — Stored Procedures and Triggers
+## Repository Structure
 
-Create the "transfer_employee" stored procedure and triggers for salary validation and audit logging.
+The repository contains:
+- PDF files documenting the lab experiments.
+- Individual `.sql` files containing SQL implementations for Experiments 3–10.
+- This README file describing the practicals and their objectives.
 
-How to Run
+## Purpose
 
-1. Open MySQL 8.
-2. Run "exp3.sql" first.
-3. Run "exp4.sql", "exp5.sql", and "exp6.sql" in sequence.
-4. Refer to the practical PDFs for the corresponding aims, diagrams, queries, and outputs.
+This repository serves as a record of my DBMS laboratory work and provides a reference for practising SQL queries, database design, normalization, transaction management, indexing, and query optimization.
 
-Notes
-
-- Experiments 1 and 2 are available as practical record PDFs.
-- SQL scripts for Experiments 3–6 are included in the repository.
-- Run the SQL scripts in order because later experiments build on earlier ones.
+---
+**Subject:** Database Management Systems (DBMS)  
+**Course:** B.Tech CSE – AI/ML
