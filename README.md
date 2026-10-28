@@ -1,50 +1,51 @@
-# DBMS Lab: Experiments 3–6
+RDBMS Lab: Experiments 1–6
 
-This repository contains the lab record PDF and separate MySQL 8 scripts for Experiments 3, 4, 5, and 6. The experiment scripts share one database and build on one another, so run them in order.
+This repository contains the practical records and SQL scripts for the RDBMS Lab (25CSH-210).
 
-## Files
+Files
 
-| File | Description |
-|---|---|
-| [`exp-3to6 dbms.pdf`](exp-3to6%20dbms.pdf) | Original lab record for Experiments 3–6, including aims, code, and output pages |
-| [`sql/exp3.sql`](exp3.sql) | Creates and seeds departments, employees, projects, and work assignments; demonstrates basic queries |
-| [`sql/exp4.sql`](exp4.sql) | Adds manager relationships; demonstrates joins, subqueries, simulated set operations, and `EXPLAIN` |
-| [`sql/exp5.sql`](exp5.sql) | Creates views, demonstrates view updatability, and runs recursive reporting-chain queries |
-| [`sql/exp6.sql`](exp6.sql) | Adds salary validation and audit triggers plus the `transfer_employee` procedure |
+File| Description
+"experiment 1 dbms.pdf"| Experiment 1: ER diagram for an Indian e-commerce platform
+"experiment 2 dbms.pdf"| Experiment 2: Relational schema using MySQL constraints and referential integrity
+"exp-3to6-dbms.pdf"| Practical record for Experiments 3–6, including aims, code, and output pages
+"exp3.sql"| Employee–Department–Project schema and aggregate queries
+"exp4.sql"| Joins, correlated subqueries, EXISTS, and EXPLAIN
+"exp5.sql"| SQL views and recursive CTEs
+"exp6.sql"| Stored procedure, salary validation triggers, and audit logging
 
-## Experiment overview
+Experiment Overview
 
-### Experiment 3 — Employee, Department, and Project schema
+Experiment 1 — ER Diagram
 
-Creates five departments, 30 employees, eight projects, and the `Works_On` assignment table. Demonstrates selection, projection, aggregate functions, `GROUP BY`, `HAVING`, `CASE`, and `ORDER BY`.
+Design an ER diagram for an Indian e-commerce platform.
 
-### Experiment 4 — Joins, subqueries, and query plans
+Experiment 2 — Relational Schema
 
-Adds a manager column and uses inner, left, self, and three-table joins; correlated subqueries; `EXISTS`; simulated `INTERSECT` and `EXCEPT`; and `EXPLAIN` before and after adding an index.
+Convert the ER diagram into a relational schema using MySQL constraints and demonstrate referential integrity violations.
 
-### Experiment 5 — Views and recursive CTEs
+Experiment 3 — Employee, Department, and Project
 
-Creates department-salary and employee-hierarchy views, tests a filtered updatable view with `WITH CHECK OPTION`, checks view metadata, and uses recursive CTEs to show employee chains downward, upward, and by level.
+Create the database schema and write SQL queries using aggregates, GROUP BY, and HAVING.
 
-### Experiment 6 — Procedure, validation, and audit triggers
+Experiment 4 — Joins, Subqueries, and Query Plans
 
-Creates triggers that limit salaries to 10,000–200,000, prevent salary reductions greater than 50 percent, and record employee inserts, updates, and deletes in `audit_log`. The `transfer_employee` procedure checks IDs, rejects employees with direct reports, and updates department assignments transactionally.
+Write queries using joins, correlated subqueries, and EXISTS, and compare execution plans using EXPLAIN.
 
-## Run the scripts
+Experiment 5 — Views and Recursive CTEs
 
-Install MySQL 8 and run these commands from the repository root:
+Create SQL views, test their updatability, and implement a recursive CTE for reporting chains.
 
-```sh
-mysql < sql/experiment3.sql
-mysql < sql/experiment4.sql
-mysql < sql/experiment5.sql
-mysql < sql/experiment6.sql
-```
+Experiment 6 — Stored Procedures and Triggers
 
-All scripts use the `dbms_lab` database. Experiment 3 creates the base tables and sample rows; Experiments 4–6 depend on that schema. Run each script once in order. The scripts include expected-error statements as comments; uncomment and run those individually if you want to observe validation failures. To start over, drop the `dbms_lab` database and run the sequence again.
+Create the "transfer_employee" stored procedure and triggers for salary validation and audit logging.
 
-## Notes
+How to Run
 
-- The PDF remains the original source record. The SQL files normalize typographic quotation marks and delimiter formatting so the code can be executed in MySQL 8.
-- Experiment 5 intentionally comments out updates that are expected to fail due to view restrictions.
-- Experiment 6 includes a valid transfer and salary update as examples. Other validation cases remain commented to prevent an expected error from stopping the script.
+1. Open MySQL 8.
+2. Run "exp3.sql" first.
+3. Run "exp4.sql", "exp5.sql", and "exp6.sql" in sequence.
+4. Refer to the practical PDFs for the corresponding aims, diagrams, queries, and outputs.
+
+Note
+
+Experiments 1 and 2 are available as practical record PDFs. SQL scripts for Experiments 3–6 are included in this repository.
